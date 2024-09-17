@@ -1,0 +1,4 @@
+# Ignore the following folders
+CSharpNewFeatures/bin/
+CSharpNewFeatures/obj/
+CSharpNewFeatures/.vs/
