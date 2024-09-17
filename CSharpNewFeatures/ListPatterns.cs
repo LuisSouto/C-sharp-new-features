@@ -11,7 +11,7 @@ namespace SwitchExpressionExample
       [_, _, _] => "List contains exactly three elements",
       [_, ..] => "List contains at least one element",
       [] => "List is empty",
-         _ => "Unknown pattern"
+         _ => "Unknown pattern" //The pattern matching is already exaustive
       };
 
       static void Main()
@@ -26,6 +26,8 @@ namespace SwitchExpressionExample
                new int[] { 42 },
                new int[] { }
          };
+
+         bool isListOneTwoThree = lists[0] is [1, 2, 3];
 
          foreach (var list in lists)
          {

@@ -52,11 +52,13 @@ namespace CSharpFeaturesExample
 
          shape = null;
          shape ??= new Rectangle { Width = 4, Height = 6 };
+         
          shape.Display();
          Console.WriteLine($"Area: {shape.Area}");
 
          shape = null;
          shape ??= new Triangle(3, 4);
+         
          shape.Display();
          Console.WriteLine($"Area: {shape.Area}");
       }

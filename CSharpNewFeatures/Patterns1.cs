@@ -31,7 +31,7 @@ namespace SwitchExpressionExample
          DayOfWeek.Wednesday => "Weekday",
          DayOfWeek.Thursday => "Weekday",
          DayOfWeek.Friday => "Weekday",
-         _ => throw new ArgumentOutOfRangeException(nameof(day), $"Not expected day value: {day}")
+         _ => throw new ArgumentOutOfRangeException(nameof(day), $"Not expected day value: {day}")//Check exaustiveness of the pattern
       };
    }
 }
