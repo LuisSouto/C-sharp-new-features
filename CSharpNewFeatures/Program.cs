@@ -25,3 +25,18 @@ Dictionary<string, double> emptyDict = [];
 Dictionary<string, double> nonEmptyDict = new() { ["red"] = 10, ["blue"] = 15, ["green"] = 20 };
 
 #endregion Initialization with []
+
+#region Concatenation of collections
+
+List<string> fruits = ["Apple", "Banana", "Strawberry"];
+List<string> vegetables = ["Onion", "Eggplant", "Lettuce"];
+List<string> groceries = [.. fruits, .. vegetables, "Chocolate"];
+Console.WriteLine("Grocery list: " + string.Join(", ", groceries));
+
+double[] gradesGroup1 = [6, 6, 7];
+double[] gradesGroup2 = [8, 7, 9];
+double[] totalGrades = [.. gradesGroup1, .. gradesGroup2];
+double[] forgotOneGrade = [.. gradesGroup1, 10, .. gradesGroup2];
+Console.WriteLine("Grades: " + string.Join(", ", forgotOneGrade));
+
+#endregion Concatenation of collections
