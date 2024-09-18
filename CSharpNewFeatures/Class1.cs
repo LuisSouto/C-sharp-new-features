@@ -1,7 +1,6 @@
-﻿namespace CSharpNewFeatures
+﻿namespace CSharpNewFeatures;
+
+public class MyCustomClass(string name = "")
 {
-   public class MyCustomClass(string name = "")
-   {
-      public string Name { get; } = name;
-   }
+   public string Name { get; } = name;
 }
